@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watch videos</title>
+<link rel="stylesheet" type="text/css" href="css\style.css">
+<script src="js\main.js"></script>
+<!-- Load Babel -->
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body onload="onPageLoad()">
+	<div id="header"><h1>Front End Test</h1></div>
+	<div id="body">
+		<div class="taskdiv">
+			<div class="searchDiv">
+				<input type="text" id="searchInput" class="searchBox" placeholder="  search..." onkeydown="searchCard(event)"></input>
+			</div>
+			<div class="criteria">
+				<label>Order by : </label> <button onclick="getNewData()" id="newBtn"> Newest first </button>
+				<button onclick="getOldData()" id="oldBtn">Oldest first </button>
+				<button onclick="getRate()" id="rateBtn">Rating</button>
+			</div>
+		</div>
+		
+		<div id="mainDiv" class="mainDiv">
+			
+		</div>
+	</div>
+	<div id="footer"><hr/></div>
+
+</body>
+</html>
